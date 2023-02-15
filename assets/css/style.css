@@ -1,0 +1,72 @@
+.nueva_tarea{
+    display: flex;
+}
+
+.ingreso_tarea{
+margin-right: 30px;
+}
+
+.check_in{
+    vertical-align: 0;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    border: 1.5px solid black;
+    border-radius: 20%;
+}
+
+.icons{
+    font-size: 19px;
+    color: red;
+}
+
+.main{
+    margin-top: 5%;
+}
+
+.footer {
+    background: #0c0b0c;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__title {
+    font-size: 2.8rem;
+    margin-bottom: .25rem;
+}
+
+.footer__subtitle {
+    font-size: 1rem;
+}
+
+.footer__socials{
+    margin-left: auto;
+}
+
+.footer__social {
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+.footer__social:hover {
+    color: gray;
+}
+
+.footer__copy {
+    font-size: 1rem;
+    text-align: center;
+    color: gray;
+    margin-top: 2rem;
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__social {
+    color: #fff;
+}
