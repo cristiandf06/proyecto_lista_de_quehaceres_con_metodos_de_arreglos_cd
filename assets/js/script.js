@@ -25,7 +25,7 @@ const divTareas = document.getElementById("tareas");
 let nuevoId = 4;
 renderTareas(); //Permite que al recargar la página, quede guardada las tareas anteriores.
 tareasTotales();
-tareasRealizadas;
+tareasRealizadas();
 
 botonAgregar.addEventListener("click", function () {
     
