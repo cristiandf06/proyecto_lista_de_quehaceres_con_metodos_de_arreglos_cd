@@ -17,7 +17,7 @@ let tareas = [
 ];
 
 const inputAgregar = document.getElementById("inputAgregar");
-const botonAregar = document.getElementById("btnAgregar");
+const botonAgregar = document.getElementById("btnAgregar");
 const spanTareasTotales = document.getElementById("tareasTotales");
 const spanTareasRealizadas = document.getElementById("tareasRealizadas");
 const divTareas = document.getElementById("tareas");
@@ -27,7 +27,7 @@ renderTareas();
 tareasTotales();
 tareasRealizadas;
 
-botonAregar.addEventListener('click', function () {
+botonAgregar.addEventListener('click', function () {
 
     crearTarea();
     

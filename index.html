@@ -30,50 +30,25 @@
             <div class="mb-3">
                 <label class="form-label">Nueva tarea:</label>
                 <div class="nueva_tarea">
-                    <input type="text" class="form-control ingreso_tarea">
-                    <button type="submit" class="btn btn-primary">Agregar</button>
+                    <input type="text" class="form-control ingreso_tarea" id="ingresarTarea">
+                    <button type="submit" class="btn btn-primary" id="agregarTarea">Agregar</button>
                 </div>
             </div>
             <div class="d-flex mt-3">
                 <div class="w-50">
                     <div class="d-flex align-items-start flex-column">
-                        <p class="mb-1">Total: <span id="tareas_totales"></span></p>
-                        <p class="mb-1">Realizadas: <span id="tareas_realizadas"></span></p>
+                        <p class="mb-1">Total: <span id="tareasTotales"></span></p>
+                        <p class="mb-1">Realizadas: <span id="tareasRealizadas"></span></p>
                     </div>
                 </div>
                 <div class="w-50">
                     <div class="d-flex fw-bold">
                         <div style="width:10%">ID</div>
-                        <div style="width:90%">Tarea</div>
+                        <div style="width:90%">Tareas</div>
                     </div>
 
-                    <div class="d-flex align-items-center flex-wrap">
-                        <div style="width:10%">1</div>
-                        <label style="width:70%" class="form-check-label" for="exampleCheck">hacer la cama</label>
-                        <div style="width:10%">
-                            <input type="checkbox-3" class="form-check-input check_in m-2" id="exampleCheck1">
-                        </div>
-                        <div style="width:10%">
-                            <i class="uil uil-times-circle icons"></i>
-                        </div>
-
-                        <div style="width:10%">1</div>
-                        <label style="width:70%" class="form-check-label" for="exampleCheck">Check me out</label>
-                        <div style="width:10%">
-                            <input type="checkbox-3" class="form-check-input check_in m-2" id="exampleCheck2">
-                        </div>
-                        <div style="width:10%">
-                            <i class="uil uil-times-circle icons"></i>
-                        </div>
-
-                        <div style="width:10%">1</div>
-                        <label style="width:70%" class="form-check-label" for="exampleCheck">Check me out</label>
-                        <div style="width:10%">
-                            <input type="checkbox-3" class="form-check-input check_in m-2" id="exampleCheck3">
-                        </div>
-                        <div style="width:10%">
-                            <i class="uil uil-times-circle icons"></i>
-                        </div>
+                    <div class="d-flex align-items-center flex-wrap" id="tareas">
+                        
                     </div>
                 </div>
             </div>
