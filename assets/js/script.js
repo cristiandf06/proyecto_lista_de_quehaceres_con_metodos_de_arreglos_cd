@@ -46,6 +46,10 @@ function crearTarea () {
     nuevoId++;
 }
 
+function removeElement(event){
+
+}
+
 function renderTareas(){
     let html = "";
 
@@ -65,7 +69,7 @@ function renderTareas(){
                 <input type="checkbox" class="form-check-input check_in" id="completado-${tarea.id}" ${checkboxChequeado} onchange="actualizarTarea(${tarea.id})">
             </div>
             <div style="width:10%">
-                <i class="uil uil-times-circle icons"></i>
+                <i class="uil uil-times-circle icons delete" onclick="borrar(${tarea.id})" ></i>
             </div>
             `;
 
@@ -93,8 +97,14 @@ function tareasTotales(){
 }
 
 function tareasRealizadas(){
-    let tareasCompletadas = tareas.filter(tarea => tarea.completado)
+    let tareasCompletadas = tareas.filter(tarea => tarea.id)
     let realizadas = tareasCompletadas.length;
 
     spanTareasRealizadas.innerHTML = realizadas;
 }
+
+function borrar(id){
+    const indexBorrar = tareas.findIndex(tarea => tarea.id == id)
+    tareas.splice(indexBorrar, 1)
+    renderTareas()
+    }
