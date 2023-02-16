@@ -46,10 +46,6 @@ function crearTarea () {
     nuevoId++;
 }
 
-function removeElement(event){
-
-}
-
 function renderTareas(){
     let html = "";
 
@@ -97,14 +93,14 @@ function tareasTotales(){
 }
 
 function tareasRealizadas(){
-    let tareasCompletadas = tareas.filter(tarea => tarea.id)
+    let tareasCompletadas = tareas.filter(tarea => tarea.completado)
     let realizadas = tareasCompletadas.length;
 
     spanTareasRealizadas.innerHTML = realizadas;
 }
 
 function borrar(id){
-    const indexBorrar = tareas.findIndex(tarea => tarea.id == id)
+    const indexBorrar = tareas.findIndex((tarea) => tarea.id == id)
     tareas.splice(indexBorrar, 1)
     renderTareas()
     }
