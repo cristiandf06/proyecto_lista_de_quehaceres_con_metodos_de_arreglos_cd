@@ -32,6 +32,9 @@ botonAgregar.addEventListener("click", function () {
     crearTarea();
 
     renderTareas();
+
+    tareasTotales();
+
 });
 
 function crearTarea () {
@@ -102,5 +105,7 @@ function tareasRealizadas(){
 function borrar(id){
     const indexBorrar = tareas.findIndex((tarea) => tarea.id == id)
     tareas.splice(indexBorrar, 1)
-    renderTareas()
+    tareasTotales();
+    tareasRealizadas();
+    renderTareas();
     }
